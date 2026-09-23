@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PrepTrack | Placement Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <h1>PrepTrack</h1>
+
+        <nav>
+            <a class="active">🏠 Dashboard</a>
+            <a>📚 Subjects</a>
+            <a>✅ Tasks</a>
+            <a>💼 Jobs</a>
+            <a>🎯 Interviews</a>
+            <a>📊 Progress</a>
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div>
+                <h2>Good Morning 👋</h2>
+                <p>Let's continue your placement preparation.</p>
+            </div>
+
+            <button id="themeBtn">🌙</button>
+
+        </header>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="card">
+                <span>Overall Progress</span>
+                <h2>72%</h2>
+                <p>Keep going!</p>
+            </div>
+
+            <div class="card">
+                <span>Tasks Completed</span>
+                <h2 id="taskCount">0</h2>
+                <p>This week</p>
+            </div>
+
+            <div class="card">
+                <span>Jobs Applied</span>
+                <h2>7</h2>
+                <p>This month</p>
+            </div>
+
+            <div class="card">
+                <span>Interviews</span>
+                <h2>2</h2>
+                <p>Upcoming</p>
+            </div>
+
+        </section>
+
+
+        <!-- Progress -->
+        <section class="panel">
+
+            <div class="section-title">
+                <h2>Overall Preparation</h2>
+                <strong>72%</strong>
+            </div>
+
+            <div class="progress">
+                <div class="progress-fill"></div>
+            </div>
+
+        </section>
+
+
+        <!-- Two Columns -->
+        <section class="grid">
+
+
+            <!-- Tasks -->
+            <div class="panel">
+
+                <div class="section-title">
+                    <h2>Today's Tasks</h2>
+                </div>
+
+                <div class="add-task">
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="Enter a task..."
+                    >
+
+                    <button onclick="addTask()">Add</button>
+
+                </div>
+
+                <ul id="taskList"></ul>
+
+            </div>
+
+
+            <!-- Interviews -->
+            <div class="panel">
+
+                <div class="section-title">
+                    <h2>Upcoming Interviews</h2>
+                </div>
+
+                <div class="interview">
+                    <div>
+                        <h3>Frontend Developer</h3>
+                        <p>Accenture</p>
+                    </div>
+
+                    <span>25 Sep</span>
+                </div>
+
+
+                <div class="interview">
+                    <div>
+                        <h3>Graduate Engineer</h3>
+                        <p>TCS</p>
+                    </div>
+
+                    <span>28 Sep</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Subjects -->
+        <section class="panel">
+
+            <div class="section-title">
+                <h2>Subject Progress</h2>
+            </div>
+
+
+            <div class="subject">
+
+                <div>
+                    <h3>JavaScript</h3>
+                    <p>70% completed</p>
+                </div>
+
+                <div class="subject-bar">
+                    <div style="width:70%"></div>
+                </div>
+
+            </div>
+
+
+            <div class="subject">
+
+                <div>
+                    <h3>React</h3>
+                    <p>50% completed</p>
+                </div>
+
+                <div class="subject-bar">
+                    <div style="width:50%"></div>
+                </div>
+
+            </div>
+
+
+            <div class="subject">
+
+                <div>
+                    <h3>SQL</h3>
+                    <p>60% completed</p>
+                </div>
+
+                <div class="subject-bar">
+                    <div style="width:60%"></div>
+                </div>
+
+            </div>
+
+
+            <div class="subject">
+
+                <div>
+                    <h3>Aptitude</h3>
+                    <p>40% completed</p>
+                </div>
+
+                <div class="subject-bar">
+                    <div style="width:40%"></div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Job Tracker -->
+        <section class="panel">
+
+            <div class="section-title">
+                <h2>Recent Applications</h2>
+            </div>
+
+            <div class="job">
+
+                <div>
+                    <h3>Accenture</h3>
+                    <p>Frontend Developer</p>
+                </div>
+
+                <span class="status applied">
+                    Applied
+                </span>
+
+            </div>
+
+
+            <div class="job">
+
+                <div>
+                    <h3>TCS</h3>
+                    <p>Graduate Engineer</p>
+                </div>
+
+                <span class="status assessment">
+                    Assessment
+                </span>
+
+            </div>
+
+
+            <div class="job">
+
+                <div>
+                    <h3>Infosys</h3>
+                    <p>Frontend Developer</p>
+                </div>
+
+                <span class="status interview-status">
+                    Interview
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
